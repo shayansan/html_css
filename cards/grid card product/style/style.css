@@ -1,0 +1,133 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins';
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(/fonts/poppins-medium-webfont.woff2);
+}
+p{
+font-weight: 400;
+font-size: 10px;
+}
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container{
+width: 1000px;
+margin: 5rem auto;
+height: 100vh;
+}
+.grid_system{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+margin: 0 auto;
+column-gap:2rem ;
+row-gap: 5rem;
+padding-bottom: 5rem;
+justify-content: center;
+}
+.img{
+transition: all 0.8s ease;
+}
+.img img{
+width: 200px;
+}
+.item_grid{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 15px 3px;
+box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+border-radius: 8px;
+cursor: pointer;
+}
+.item_content{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #333;
+}
+.item_content p{
+text-align: center;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+.item-btn{
+margin-top: 15px;
+}
+.item-btn button{
+color: #ffda00;
+background-color: #fff;
+border: 1px solid #ffda00;
+outline: none;
+padding: 8px 18px;
+border-radius: 10px;
+font-weight: bold;
+transition: all 0.8s ease;
+}
+.item_grid:hover .img{
+transform: translateY(-45px);
+}
+.item_grid:hover{
+background-color: #31a9cc;
+box-shadow: 0 8px 24px -1px #31a9cc;
+}
+.item_grid:hover .item_content{
+color: #fff;
+}
+.item_grid:hover button{
+background-color: #feac00;
+color: #ffff;
+}
+@media screen and (max-width:999px) {
+    .grid_system {
+        grid-template-columns: repeat(3,1fr);
+        padding: 10px 30px;
+        padding-bottom: 5rem;
+    }
+    .img img{
+        width: 150px;
+    }
+    .item_grid:hover .img{
+        transform: translateY(-35px);
+        }
+}
+@media screen and (max-width:720px) {
+    .grid_system{
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 20px;
+    padding-bottom: 5rem;
+    }
+    .img img{
+        width: 120px;
+    }
+    .item_grid:hover .img{
+        transform: translateY(-30px);
+        }
+}
+@media screen and (max-width:480px) {
+    .grid_system{
+    grid-template-columns: repeat(1,250px);
+    padding: 10px 20px;
+    row-gap: 2rem;
+    margin:auto;
+    justify-content: center;
+    padding-bottom: 5rem;
+    }
+    .img img{
+        width: 100px;
+    }
+    .item_grid:hover .img{
+        transform: translateY(-25px);
+        }
+        p{
+        line-height: 1rem;
+        }
+}

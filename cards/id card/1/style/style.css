@@ -1,0 +1,104 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "popins-regular";
+}
+@font-face {
+    font-family: "popins-medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "popins-light";
+    src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: "popins-regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+section{
+position: relative;
+min-height: 100vh;
+width: 100%;
+background-color: #020420;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+section::before{
+ content: "";
+ position: absolute;
+ height: 180px;
+ width: 180px;
+ transform:translate(-180px,-110px) ;
+ border-radius:50% ;
+ background: #76c000;
+ -webkit-border-radius:50% ;
+ -moz-border-radius:50% ;
+ -ms-border-radius:50% ;
+ -o-border-radius:50% ;
+ -webkit-transform:translate(-180px,-110px) ;
+ -moz-transform:translate(-180px,-110px) ;
+ -ms-transform:translate(-180px,-110px) ;
+ -o-transform:translate(-180px,-110px) ;
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    transform:translate(180px,110px) ;
+    border-radius:50% ;
+    background: #76c000;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    -webkit-transform:translate(180px,110px) ;
+    -moz-transform:translate(180px,110px) ;
+    -ms-transform:translate(180px,110px) ;
+    -o-transform:translate(180px,110px) ;
+}
+.contain{ 
+    width: 400px; 
+    position: relative; 
+    height: 220px; 
+    z-index: 20;
+}
+.contain .card{ background-color:rgba(255, 255, 255, 0.1) ; position: absolute; width: 100%; backdrop-filter: blur(25px); height: 100%; padding: 25px; border-radius:25px; box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.1); backface-visibility:hidden ; -webkit-backface-visibility:hidden ;
+}
+.front-face header, .front-face .logo{
+display: flex;
+align-items: center;
+}
+.front-face header{
+justify-content: space-between
+}
+.front-face .logo img{
+width: 45px;
+margin-right: 10px;
+}
+.front-face .logo h5{
+font-size: 16px;
+font-weight: 400;
+}
+.front-face .chip{ width: 30px; border-radius:5px ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ;
+}
+.front-face .card-details{
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+margin-top: 40px;
+}
+h6{
+font-size: 10px;
+font-weight: 400;
+}
+h5.number{
+font-size: 18px;
+letter-spacing: 1px;
+}
+h5.name{
+margin-top: 20px;
+}

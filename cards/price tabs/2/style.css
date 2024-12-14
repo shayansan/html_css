@@ -1,0 +1,100 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins';
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(/fonts/poppins-light-webfont.woff2);
+}
+.row{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    column-gap: 20px;
+    cursor: pointer;
+    height: 100vh;
+    align-items: center;
+}
+.single-price{
+text-align: center;
+background-color: #262626;
+margin-top: 20px;
+transition: 900ms;
+}
+.single-price h3{
+font-size: 25px;
+font-weight: 600;
+text-align: center;
+margin-top: -80px;
+color: #fff;
+}
+.single-price h4{
+font-weight: 500;
+font-size: 48px;
+color: #fff;
+margin-top: 7px;
+}
+.single-price h4 span.sup{
+vertical-align: text-top;
+font-size: 25px;
+}
+.deal-top{
+position: relative;
+background-color: #16a086;
+font-size: 16px;
+text-transform: uppercase;
+padding: 100px 24px 0;
+}
+.deal-top::after{
+position: absolute;
+content: '';
+left: 0;
+bottom: -50px;
+width: 0;
+height: 0;
+border-top: 50px solid #16a086 ;
+border-left: 175px solid transparent ;
+border-right: 183px solid transparent ;
+}
+.deal-bottom{
+padding: 56px 16px 0;
+}
+.deal-bottom ul{
+margin:0;
+padding: 0;
+}
+.deal-bottom ul li{
+font-size: 16px;
+color: #fff;
+font-weight: 300;
+margin-top: 16px;
+border-top: 1px solid #ddd;
+padding-top: 16px;
+list-style: none;
+}
+.btn-area a{
+display: inline-block;
+font-size: 18px;
+color: #fff;
+background-color:#16a086 ;
+padding: 8px 24px;
+margin-top: 32px;
+margin-bottom: 40px;
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none;
+}
+.single-price:hover{
+background-color: #16a086;
+}
+.single-price:hover .deal-top{
+background-color: #262626;
+}
+.single-price:hover .deal-top::after{
+border-top:50px solid #262626;
+}
+.single-price:hover .btn-area a{
+background-color: #262626;
+}

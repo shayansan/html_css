@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(/fonts/poppins-light-webfont.woff2);
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow-y: auto; /* or overflow-y: scroll */
+    font-family: 'poppins';
+}
+
+h1 {
+    color: orangered;
+    font-size: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.grid_products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 1px solid #fff;
+    transform: skewY(-3deg);
+    text-align: center;
+    padding: 25px 22px;
+    transition: all 0.3s ease-in;
+}
+
+.grid_item p {
+    text-align: center;
+    line-height: 25px;
+}
+
+.grid_item a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #827e7e;
+    width: 80%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.grid_item a:hover {
+    background-color: #5d5858;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .grid_products {
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+    font-size: 25px;
+    }
+    body{
+        height: 120vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid_products {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_item h1 {
+        font-size: 30px;
+    }
+    body{
+    height: 190vh;
+    }
+    h1{
+        font-size: 20px;
+        }
+}
+@media (max-width: 332px) {
+    .grid_products {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_item h1 {
+        font-size: 30px;
+    }
+    body{
+    height: 210vh;
+    }
+    h1{
+        font-size: 15px;
+        }
+}
+
