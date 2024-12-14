@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h2 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    color: #333;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+}
+
+.social-links {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    display: none;
+}
+
+.card:hover .social-links {
+    display: block;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+        margin: 20px;
+    }
+}
