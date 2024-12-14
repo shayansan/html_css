@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>shayansan_mini_project_1_2</title>
+<script src="https://kit.fontawesome.com/27e065ba71.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="totall__box">
+<p>Employee Interests Survey Form</p>
+<label for="name">Enter your name:</label>
+<input id="name" name="name" type="text" placeholder="first name..."><br>
+<label for="Department">Enter your Department:</label>
+<input id="Department" name="Department" type="text" placeholder="Department..."><br>
+<div id="explanantion"><label for="explanantion">tell us a little about yourself:</label></div>
+<textarea name="explanantion" id="explain" rows="10" cols="30"></textarea>
+<form id="radio_btn">
+  <label for="">Do you excercise at home?</label>
+    <input type="radio" id="yes" name="excercise" value="yes">
+    <label for="yes">yes</label>
+    <input type="radio" id="no" name="excercise" value="no">
+    <label for="no">no</label>
+  </form>
+  <form id="checkbox_btn">
+    <label for="">How do you like to read about your favorite topics?</label><br><br>
+    <input type="checkbox" id="fav_topic1" name="fav_topic1" value="book">
+    <label for="vehicle1"> books </label>
+    <input type="checkbox" id="fav_topic2" name="fav_topic2" value="online">
+    <label for="vehicle2"> online recources</label>
+    <input type="checkbox" id="fav_topic3" name="fav_topic3" value="phone">
+    <label for="vehicle3"> phone apps</label>
+    <input type="checkbox" id="fav_topic4" name="fav_topic4" value="magazine">
+    <label for="vehicle3"> magazines</label>
+  </form>
+  <label for="">What genre of movies do you like?</label>&nbsp;&nbsp;
+  <select name="genre" id="genre">
+  <option value="comedy">comedy</option>
+  <option value="scary">scary</option>
+  <option value="drama">drama</option>
+  <option value="action">action</option>
+  <option value="historic">historic</option>
+  </select>
+  <div id="sub_btn" style="text-align: center;">
+    <input type="submit" value="Submit" id="submit">
+  </div>
+</div>
+</body>
+</html>

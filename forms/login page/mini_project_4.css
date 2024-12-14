@@ -1,0 +1,103 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* direction: rtl; */
+/* font-family: vazir; */
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+background-color: #303035;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 95vh;
+    font-family: "Poppins", sans-serif;
+}
+input,button{
+font-family: inherit;
+border: none;
+outline: none;
+}
+.main{
+width: 400px;
+/* height: 400px; */
+position: relative;
+}
+.shape{
+width: 160px;
+height: 160px;
+border-radius: 100%;
+position: absolute;
+}
+.shape--one{
+background-color:#f07a84 ;
+top: -50px;
+left: -80px;
+z-index: -1;
+}
+.shape--two{
+background-color: #736ca0;
+right: -70px;
+bottom: -65px;
+z-index: -1;
+}
+ 
+.form{
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.13);
+color: white;
+padding: 50px 35px 35px 35px;
+border: 2px solid rgba(255, 255, 255, 0.13);
+border-radius: 10px;
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(10px);
+}
+.form-title{
+font-size: 32px;
+text-align: center;
+margin-bottom: 30px;
+}
+.form-input-wrapper{
+margin-bottom: 25px;
+}
+.form_label{
+font-size: 16px;
+}
+.Form-input{
+font-size: 14px;
+display: block;
+font-weight: 300;
+height: 50px;
+background-color: rgba(255, 255, 255, 0.07);
+padding: 0 10px;
+border-radius: 6px;
+width: 100%;
+margin-top: 8px;
+color: white;
+}
+.Form-input::placeholder{
+color: white;
+}
+.form-submit-btn{
+background-color: white;
+color:#303035 ;
+border-radius: 4px;
+text-align: center;
+padding: 15px 0;
+display: block;
+font-size: 18px;
+width: 100%;
+margin-top: 30px;
+font-weight: bold;
+}
+.form-submit-btn:hover{
+cursor: pointer;
+background-color:#303035 ;
+color: white;
+}

@@ -1,0 +1,63 @@
+* {
+    background-color: azure
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.totall__box {
+text-align: center;
+padding: 0rem 5rem;
+border: 1px solid #333;
+padding-bottom: 0.5rem;
+border-radius: 0.7rem;
+}
+.totall__box p {
+font-size: larger;
+font-weight: bold;
+text-decoration: underline;
+}
+#name {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+#Department {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+#explanantion {
+    margin-bottom: 15px;
+}
+
+#explain {
+    margin-bottom: 5px;
+    outline: none;
+}
+
+#radio_btn {
+    margin-bottom: 15px;
+}
+
+#checkbox_btn {
+    margin-bottom: 22px;
+}
+
+#submit {
+    margin-top: 15px;
+    background-color: aqua;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: aquamarine;
+}
