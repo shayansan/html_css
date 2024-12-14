@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(/fonts/poppins-medium-webfont.woff2);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-family: 'poppins';
+}
+li{list-style-type: none;}
+a{
+text-decoration: none;
+color: #fff;
+padding: 15px;
+font-weight: 500;
+transition: all 0.3s ease-in;
+border-radius: 5px;
+}
+.header_main_cite{
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.2);
+}
+.header_main_cite video{
+min-width: 100%;
+min-height: 100%;
+position: fixed;
+z-index: -1;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+}
+.navabar{
+display: flex;
+justify-content: space-between;
+width: 90%;
+margin: auto;
+padding: 1.5rem;
+align-items: baseline;
+}
+.navabar ul{
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.navabar ul li a:hover{
+color: #000;
+background-color: #fff;
+}
+.navabar img{
+width: 130px;
+}
+.content{
+text-align: center;
+height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.content h1{
+font-size: 70px;
+color: #fff;
+}
+.content a{
+background-color: #fff;
+color: #000;
+width: 200px;
+display: inline-block;
+padding: 16px 5px;
+border-radius: 25px;
+font-size: 20px;
+font-weight: 600;
+margin-top: 2rem;
+transition: all 0.3s ease;
+margin-bottom: 5rem;
+}
+.box_form_header{
+max-width: 600px;
+margin: 0 auto;
+margin-top: -90px;
+}
+.form_header{
+width: 100%;
+height: 50px;
+position: relative;
+}
+.form_header input{
+border: none;
+outline: none;
+height: 100%;
+width: 100%;
+border-radius: 20px;
+padding-left: 15px;
+font-size: 16px;
+}
+.form_header button{
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+padding: 12px 25px;
+border: none;
+background-color: #fdbc00;
+border-radius: 0 20px 20px 0; 
+color: #fff;
+font-size: 1rem;
+font-family: 'poppins';
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.content a:hover{
+background-color: #00c0e2;
+color: #fff;
+}
+.form_header button:hover{
+background-color: #00c0e2;
+color: #fff;
+}
+@media screen and (max-width:1000px) {
+    .box_form_header{
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: -200px;
+        }   
+}
+@media screen and (max-width:700px) {
+.body{
+background-color: rgba(0, 0, 0, 0.2);
+}
+    
+    .navbar{
+        padding: 1rem;
+        width: 80%;
+        justify-content: center;
+    }
+    .navbar img {
+        width: 90px;
+    }
+    .navbar ul {
+        gap: 1rem;
+    }
+    .navbar ul li a {
+        font-size: 0.6rem;
+        padding: 6px;
+    }
+    .content{
+     height: auto;
+     margin-top: 5rem;
+    }
+    .content h1 {
+        font-size: 50px;
+    }
+    .box_form_header{
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width:563px) {
+    .form_header {
+        width: 75%;
+        height: 50px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .content h1 {
+        font-size: 35px;
+    }
+    .content a {
+        width: 155px;
+    }
+    .navabar{
+    justify-content: center;
+    }
+    .navabar ul li{
+    display: none;
+    }
+    .form_header button{
+    padding: 7px 15px;
+    }
+}
